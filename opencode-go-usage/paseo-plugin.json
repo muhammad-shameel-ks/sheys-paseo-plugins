@@ -1,7 +1,7 @@
 {
   "id": "opencode-go-usage",
   "name": "OpenCode Go usage",
-  "description": "Shows OpenCode Go subscription usage in the Usage panel.",
+  "description": "Shows OpenCode Go subscription usage in the Usage panel, and adds a Pure Black Blue theme.",
   "media": [],
   "requirements": {
     "paseo": ">=0.16.0"

@@ -8,6 +8,8 @@ Shows OpenCode Go subscription usage (5-hour, weekly, and monthly meters) in Pas
 
 Paseo's built-in OpenCode Go source only reads the OpenCode 1 API key in `~/.local/share/opencode/auth.json`. This plugin reads the OpenCode 2 Console sign-in (`opencode auth login opencode`) from `opencode.db` in read-only mode and calls the Console's `/api/go/status` endpoint. It never refreshes tokens or writes the credential store.
 
+The same plugin adds a **Pure Black Blue** theme under Settings → Appearance: Paseo's Pure Black palette with the green accent swapped for blue.
+
 Requires Paseo 0.16+, OpenCode 2, and plugins enabled under Settings → Plugins.
 
 ```sh
