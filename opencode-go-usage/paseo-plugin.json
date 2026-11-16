@@ -1,0 +1,9 @@
+{
+  "id": "opencode-go-usage",
+  "name": "OpenCode Go usage",
+  "description": "Shows OpenCode Go subscription usage in the Usage panel.",
+  "media": [],
+  "requirements": {
+    "paseo": ">=0.16.0"
+  }
+}
