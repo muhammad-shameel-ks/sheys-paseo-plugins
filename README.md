@@ -11,7 +11,7 @@ paseo plugin add git:muhammad-shameel-ks/sheys-paseo-plugins:opencode-go-usage
 paseo plugin ls    # confirm it is running
 ```
 
-Requires Paseo 0.16+. Plugin code is trusted and unsandboxed: server code runs as the daemon user, and client code runs inside Paseo.
+Requires Paseo 0.15.4+. On 0.15 the theme uses only its base colors, so the sidebar and secondary shades are derived by Paseo. Plugin code is trusted and unsandboxed: server code runs as the daemon user, and client code runs inside Paseo.
 
 Update or remove:
 

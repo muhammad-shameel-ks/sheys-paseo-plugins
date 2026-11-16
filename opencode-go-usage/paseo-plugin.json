@@ -4,6 +4,6 @@
   "description": "Shows OpenCode Go subscription usage in the Usage panel, and adds a Pure Black Blue theme.",
   "media": [],
   "requirements": {
-    "paseo": ">=0.16.0"
+    "paseo": ">=0.15.4"
   }
 }
