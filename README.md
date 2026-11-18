@@ -7,7 +7,7 @@ Personal [Paseo](https://paseo.sh) plugins.
 Turn on **Settings → Plugins → Enable plugins** on the Paseo daemon host, then install the plugin:
 
 ```sh
-paseo plugin add git:muhammad-shameel-ks/sheys-paseo-plugins:opencode-go-usage
+paseo plugin add git:muhammad-shameel-ks/sheys-paseo-plugins:sheys-paseo-plugin
 paseo plugin ls    # confirm it is running
 ```
 
@@ -16,11 +16,11 @@ Requires Paseo 0.15.4+. On 0.15 the theme uses only its base colors, so the side
 Update or remove:
 
 ```sh
-paseo plugin update opencode-go-usage
-paseo plugin remove opencode-go-usage
+paseo plugin update sheys-paseo-plugin
+paseo plugin remove sheys-paseo-plugin
 ```
 
-## opencode-go-usage
+## sheys-paseo-plugin
 
 ### OpenCode Go usage
 
@@ -38,10 +38,10 @@ Install from a clone instead (edits apply after a reload):
 
 ```sh
 git clone https://github.com/muhammad-shameel-ks/sheys-paseo-plugins
-cd sheys-paseo-plugins/opencode-go-usage
+cd sheys-paseo-plugins/sheys-paseo-plugin
 npm install
 npm run typecheck
 paseo plugin install "$PWD"
-paseo plugin reload opencode-go-usage    # after source changes
-paseo plugin logs opencode-go-usage      # view plugin logs
+paseo plugin reload sheys-paseo-plugin    # after source changes
+paseo plugin logs sheys-paseo-plugin      # view plugin logs
 ```
