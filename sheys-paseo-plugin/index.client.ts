@@ -1,4 +1,5 @@
 import type { PluginClientContext } from "@getpaseo/plugin/client";
+import { contributeCachePill } from "./client/cache-indicator";
 
 /**
  * Paseo's built-in pure black palette with the green accent swapped for blue.
@@ -26,10 +27,16 @@ const PASEO_016_COLORS = {
 
 export default function contribute(client: PluginClientContext) {
   const theme = { id: "blue-black", name: "Pure Black Blue", appearance: "dark" as const };
+  let removeTheme: () => void;
   try {
-    return client.addTheme({ ...theme, colors: { ...BASE_COLORS, ...PASEO_016_COLORS } });
+    removeTheme = client.addTheme({ ...theme, colors: { ...BASE_COLORS, ...PASEO_016_COLORS } });
   } catch {
     // Paseo 0.15 rejects the 0.16 color overrides; it derives those colors from the base palette.
-    return client.addTheme({ ...theme, colors: BASE_COLORS });
+    removeTheme = client.addTheme({ ...theme, colors: BASE_COLORS });
   }
+  const removeCachePill = contributeCachePill(client);
+  return () => {
+    removeCachePill();
+    removeTheme();
+  };
 }
