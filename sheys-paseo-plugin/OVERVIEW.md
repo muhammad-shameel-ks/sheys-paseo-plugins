@@ -1,7 +1,5 @@
-Adds OpenCode Go subscription usage to the Paseo Usage panel, showing the 5-hour, weekly, and monthly meters with their reset times. Because the source runs on the daemon, the desktop and mobile apps both show it.
+Adds a **Pure Black Blue** theme under Settings → Appearance on every app connected to the daemon, including mobile: Paseo's Pure Black palette with the green accent swapped for blue.
 
-It reads the active OpenCode Console sign-in from OpenCode's local database (`opencode.db`, honoring `XDG_DATA_HOME` and `OPENCODE_DB`) in read-only mode and calls the Console's Go status endpoint. It never refreshes tokens or writes the credential store.
+It is a theme-only plugin. It ships no server code and registers no usage source; everything it contributes runs in the client.
 
-Setup: sign in with `opencode auth login opencode` on the daemon machine. OpenCode agents running an `opencode-go/...` model also show this usage in their agent popover. Requires OpenCode 2 and Paseo 0.15.4 or later.
-
-It also adds a Pure Black Blue theme under Settings → Appearance: Paseo's Pure Black palette with the green accent replaced by blue.
+Requires Paseo 0.15.4 or later. On 0.15, contributed dark themes use only their base colors, so Paseo derives the sidebar and the secondary shades itself.

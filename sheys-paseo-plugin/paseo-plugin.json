@@ -1,7 +1,7 @@
 {
   "id": "sheys-paseo-plugin",
   "name": "Shey's Paseo plugin",
-  "description": "Shows OpenCode Go subscription usage in the Usage panel, and adds a Pure Black Blue theme.",
+  "description": "Adds a Pure Black Blue theme: Paseo's Pure Black palette with the accent swapped from green to blue.",
   "media": [],
   "requirements": {
     "paseo": ">=0.15.4"
