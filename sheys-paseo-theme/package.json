@@ -1,13 +1,12 @@
 {
-  "name": "sheys-paseo-plugin",
+  "name": "sheys-paseo-theme",
   "private": true,
   "version": "0.0.0",
   "files": [
     "paseo-plugin.json",
     "OVERVIEW.md",
     "OVERVIEW.*.md",
-    "index.client.ts",
-    "icon.svg"
+    "index.client.ts"
   ],
   "scripts": {
     "typecheck": "tsc --noEmit"

@@ -7,7 +7,7 @@ Personal [Paseo](https://paseo.sh) plugins.
 Turn on **Settings → Plugins → Enable plugins** on the Paseo daemon host, then install the plugin:
 
 ```sh
-paseo plugin add git:muhammad-shameel-ks/sheys-paseo-plugins:sheys-paseo-plugin
+paseo plugin add git:muhammad-shameel-ks/sheys-paseo-plugins:sheys-paseo-theme
 paseo plugin ls    # confirm it is running
 ```
 
@@ -16,11 +16,16 @@ Requires Paseo 0.15.4+. Plugin code is trusted and unsandboxed.
 Update or remove:
 
 ```sh
-paseo plugin update sheys-paseo-plugin
-paseo plugin remove sheys-paseo-plugin
+paseo plugin update sheys-paseo-theme
+paseo plugin remove sheys-paseo-theme
 ```
 
-## sheys-paseo-plugin
+> **Renamed.** This plugin used to be `sheys-paseo-plugin`. It now only ships a
+> theme, so the id changed to `sheys-paseo-theme`. `paseo plugin update` will not
+> find an install under the old id: remove `sheys-paseo-plugin` first, then add
+> the new one.
+
+## sheys-paseo-theme
 
 ### Pure Black Blue theme
 
@@ -39,10 +44,10 @@ Install from a clone instead (edits apply after a reload):
 
 ```sh
 git clone https://github.com/muhammad-shameel-ks/sheys-paseo-plugins
-cd sheys-paseo-plugins/sheys-paseo-plugin
+cd sheys-paseo-plugins/sheys-paseo-theme
 npm install
 npm run typecheck
 paseo plugin install "$PWD"
-paseo plugin reload sheys-paseo-plugin    # after source changes
-paseo plugin logs sheys-paseo-plugin      # view plugin logs
+paseo plugin reload sheys-paseo-theme    # after source changes
+paseo plugin logs sheys-paseo-theme      # view plugin logs
 ```

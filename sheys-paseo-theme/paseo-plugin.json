@@ -1,6 +1,6 @@
 {
-  "id": "sheys-paseo-plugin",
-  "name": "Shey's Paseo plugin",
+  "id": "sheys-paseo-theme",
+  "name": "Shey's Paseo theme",
   "description": "Adds a Pure Black Blue theme: Paseo's Pure Black palette with the accent swapped from green to blue.",
   "media": [],
   "requirements": {
